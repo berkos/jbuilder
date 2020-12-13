@@ -11,7 +11,7 @@ rvm:
   - 2.4.10
   - 2.5.8
   - 2.6.6
-  - 2.7.1
+  - 2.7.2
   - ruby-head
 
 gemfile:
@@ -19,17 +19,18 @@ gemfile:
   - gemfiles/rails_5_1.gemfile
   - gemfiles/rails_5_2.gemfile
   - gemfiles/rails_6_0.gemfile
+  - gemfiles/rails_6_1.gemfile
   - gemfiles/rails_head.gemfile
 
 matrix:
   exclude:
-    - rvm: 2.7.1
+    - rvm: 2.7.2
       gemfile: gemfiles/rails_5_0.gemfile
-    - rvm: 2.7.1
+    - rvm: 2.7.2
       gemfile: gemfiles/rails_5_1.gemfile
     - rvm: 2.2.10
       gemfile: gemfiles/rails_5_2.gemfile
-    - rvm: 2.7.1
+    - rvm: 2.7.2
       gemfile: gemfiles/rails_5_2.gemfile
     - rvm: 2.2.10
       gemfile: gemfiles/rails_6_0.gemfile
@@ -37,6 +38,12 @@ matrix:
       gemfile: gemfiles/rails_6_0.gemfile
     - rvm: 2.4.10
       gemfile: gemfiles/rails_6_0.gemfile
+    - rvm: 2.2.10
+      gemfile: gemfiles/rails_6_1.gemfile
+    - rvm: 2.3.8
+      gemfile: gemfiles/rails_6_1.gemfile
+    - rvm: 2.4.10
+      gemfile: gemfiles/rails_6_1.gemfile
     - rvm: 2.2.10
       gemfile: gemfiles/rails_head.gemfile
     - rvm: 2.3.8
